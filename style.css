@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: "header section";
+    grid-template-rows: 100vh;
+    grid-auto-columns: 30vh 60vh;
+    grid-gap: 30px;
+   background-color: black
+}
+
+header{
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+                         "section section section section"
+                         "div div div div"
+                         "footer footer footer footer"
+                         "aside aside aside aside";
+grid-template-columns: 50px 20px 40px 60px;
+grid-template-rows: 10vh 30vh 20vh 10vh;
+grid-gap: 15px;
+background-color: black;
+
+}
+
+header nav{
+    grid-area: nav;
+    background-color: white;
+}
+
+header section{
+    grid-area: section;
+    background-color: yellow;
+}
+
+header div{
+    grid-area: div;
+    background-color: blue
+
+
+}
+
+header footer{
+    grid-area: footer;
+    background-color: white;
+}
+
+header aside{
+    grid-area: aside;
+    background-color: red;
+}
+
+section{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "div div div div"
+                         "aside aside aside aside"
+                         "footer footer footer footer";
+grid-template-rows: 30vh 20vh 10vh 40vh;
+grid-gap: 15px;
+background-color: black;
+                        
+}
+
+section header{
+    grid-area: header;
+    background-color: white;
+
+}
+
+section div{
+    grid-area: div;
+    background-color: blue;
+}
+
+section aside{
+    grid-area: aside;
+    background-color: white;
+}
+
+section footer{
+    grid-area: footer;
+    background-color: yellow;
+}
