@@ -2,9 +2,9 @@ body{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-areas: "header section";
+    grid-template-areas: "header section terceira";
     grid-template-rows: 100vh;
-    grid-auto-columns: 30vh 60vh;
+    grid-auto-columns: 23vw 40vw 31vw;
     grid-gap: 30px;
    background-color: black
 }
@@ -16,7 +16,7 @@ header{
                          "div div div div"
                          "footer footer footer footer"
                          "aside aside aside aside";
-grid-template-columns: 50px 20px 40px 60px;
+grid-template-columns: 133px 55px 41px 57px;
 grid-template-rows: 10vh 30vh 20vh 10vh;
 grid-gap: 15px;
 background-color: black;
@@ -56,8 +56,8 @@ section{
                          "div div div div"
                          "aside aside aside aside"
                          "footer footer footer footer";
-grid-template-rows: 30vh 20vh 10vh 40vh;
-grid-gap: 15px;
+grid-template-rows:  27vh 30vh 18vh 30vh;
+grid-gap: 27px;
 background-color: black;
                         
 }
@@ -82,3 +82,29 @@ section footer{
     grid-area: footer;
     background-color: yellow;
 }
+
+#terceira{
+display: grid;
+grid-template-areas: "article article"
+                     "aside aside"
+                     "footer footer";
+grid-template-rows: 18vh 34vh 68vh;
+grid-gap: 18px;
+background-color: black;
+}
+
+#terceira article{
+    grid-area: article;
+    background-color: white;
+}
+
+#terceira aside{
+    grid-area: aside;
+    background-color:red;
+}
+
+#terceira footer{
+    grid-area: footer;
+    background-color:white;
+}
+
